@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>Oracle迁移数据：ora2pg使用指南 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="一、安装ora2pg1.1 安装OS依赖软件包1[root@pg07 ~]# yum install perl-DBD-Pg perl perl-devel perl-DBI  perl-CPAN bzip2 perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker  1.2 安装Oracle瘦客户端从Oracle官方网站下载oracle 12c的瘦客户端，然后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle迁移数据：ora2pg使用指南">
+<meta property="og:url" content="http://example.com/2020/11/23/oracle%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE%EF%BC%9Aora2pg%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、安装ora2pg1.1 安装OS依赖软件包1[root@pg07 ~]# yum install perl-DBD-Pg perl perl-devel perl-DBI  perl-CPAN bzip2 perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker  1.2 安装Oracle瘦客户端从Oracle官方网站下载oracle 12c的瘦客户端，然后">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.fenv.top/wp-content/uploads/2020/11/image-1024x207.png">
+<meta property="article:published_time" content="2020-11-23T09:11:40.000Z">
+<meta property="article:modified_time" content="2021-04-04T03:56:34.499Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="oracle">
+<meta property="article:tag" content="postgres">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.fenv.top/wp-content/uploads/2020/11/image-1024x207.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,213 +158,87 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-oracle迁移数据：ora2pg使用指南" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/18/%E4%B8%87%E5%AD%97%E9%95%BF%E6%96%87%EF%BC%8C%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82tcp%E3%80%81ip%E5%92%8Chttp%E3%80%81https/" class="archive-article-date">
-  	<time datetime="2021-03-18T03:21:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/18/%E4%B8%87%E5%AD%97%E9%95%BF%E6%96%87%EF%BC%8C%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82tcp%E3%80%81ip%E5%92%8Chttp%E3%80%81https/">万字长文，一文搞懂TCP、IP和HTTP、HTTPS</a>
+    <h1 class="article-title" itemprop="name">
+      Oracle迁移数据：ora2pg使用指南
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/鹤鹤//" class="article-tag-list-link color3">鹤鹤</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/03/hello-world/" class="archive-article-date">
-  	<time datetime="2021-03-03T14:32:27.500Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/02/04/ora2pg%E5%B7%A5%E5%85%B7%E5%AE%8C%E6%88%90oracle-%E5%88%B0-postgresql%E8%BF%81%E7%A7%BB%E8%BF%87%E7%A8%8B%E5%89%8D%E5%A5%8F%E5%AE%89%E8%A3%85/" class="archive-article-date">
-  	<time datetime="2021-02-04T03:14:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/02/04/ora2pg%E5%B7%A5%E5%85%B7%E5%AE%8C%E6%88%90oracle-%E5%88%B0-postgresql%E8%BF%81%E7%A7%BB%E8%BF%87%E7%A8%8B%E5%89%8D%E5%A5%8F%E5%AE%89%E8%A3%85/">ora2pg工具完成oracle 到 postgresql迁移过程(前奏安装)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">oracle</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/鹤鹤//" class="article-tag-list-link color3">鹤鹤</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/18/linux%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F/" class="archive-article-date">
-  	<time datetime="2021-01-18T02:21:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/18/linux%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F/">Linux查看网络流量</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/鹤鹤//" class="article-tag-list-link color3">鹤鹤</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/23/oracle%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE%EF%BC%9Aora2pg%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="archive-article-date">
+        
+        <a href="/2020/11/23/oracle%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE%EF%BC%9Aora2pg%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="archive-article-date">
   	<time datetime="2020-11-23T09:11:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/23/oracle%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE%EF%BC%9Aora2pg%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Oracle迁移数据：ora2pg使用指南</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、安装ora2pg"><a href="#一、安装ora2pg" class="headerlink" title="一、安装ora2pg"></a>一、安装ora2pg</h3><h5 id="1-1-安装OS依赖软件包"><a href="#1-1-安装OS依赖软件包" class="headerlink" title="1.1 安装OS依赖软件包"></a>1.1 安装OS依赖软件包</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# yum install perl-DBD-Pg perl perl-devel perl-DBI  perl-CPAN bzip2 perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+<h5 id="1-2-安装Oracle瘦客户端"><a href="#1-2-安装Oracle瘦客户端" class="headerlink" title="1.2 安装Oracle瘦客户端"></a>1.2 安装Oracle瘦客户端</h5><p>从Oracle官方网站下载oracle 12c的瘦客户端，然后进行安装并配置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 u02]# la &#x2F;u02&#x2F;software&#x2F;oracle&#x2F;</span><br><span class="line">total 55M</span><br><span class="line">drwxr-xr-x 2 root root 4.0K Dec  3 15:04 .</span><br><span class="line">drwxr-xr-x 7 root root   76 Dec  3 15:04 ..</span><br><span class="line">-rw-r--r-- 1 root root  51M Nov 28 14:34 oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm</span><br><span class="line">-rw-r--r-- 1 root root 593K Nov 28 14:32 oracle-instantclient12.2-devel-12.2.0.1.0-1.x86_64.rpm</span><br><span class="line">-rw-r--r-- 1 root root 1.5M Nov 28 14:32 oracle-instantclient12.2-jdbc-12.2.0.1.0-1.x86_64.rpm</span><br><span class="line">-rw-r--r-- 1 root root 692K Nov 28 14:32 oracle-instantclient12.2-sqlplus-12.2.0.1.0-1.x86_64.rpm</span><br><span class="line">-rw-r--r-- 1 root root 922K Nov 28 14:35 oracle-instantclient12.2-tools-12.2.0.1.0-1.x86_64.rpm</span><br><span class="line">[root@pg07 ~]# yum -y localinstall &#x2F;u02&#x2F;software&#x2F;oracle&#x2F;oracle-instantclient12.2-*.rpm</span><br><span class="line">[root@pg07 ~]# mkdir -p &#x2F;usr&#x2F;lib&#x2F;oracle&#x2F;12.2&#x2F;client64&#x2F;network&#x2F;admin</span><br></pre></td></tr></table></figure>
+
+<p>编辑root环境变量，加入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# vi .bash_profile </span><br><span class="line">export LD_LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib&#x2F;oracle&#x2F;12.2&#x2F;client64&#x2F;lib</span><br><span class="line">export NLS_LANG&#x3D;AMERICAN_AMERICA.ZHS16GBK</span><br><span class="line">export TNS_ADMIN&#x3D;&#x2F;usr&#x2F;lib&#x2F;oracle&#x2F;12.2&#x2F;client64&#x2F;network&#x2F;admin</span><br><span class="line">export ORACLE_HOME&#x3D;&#x2F;usr&#x2F;lib&#x2F;oracle&#x2F;12.2&#x2F;client64&#x2F;</span><br><span class="line">export PATH&#x3D;$PATH:$ORACLE_HOME&#x2F;bin:$HOME&#x2F;bin</span><br><span class="line">[root@pg07 ~]# source .bash_profile</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-3-安装ora2pg"><a href="#1-3-安装ora2pg" class="headerlink" title="1.3 安装ora2pg"></a>1.3 安装ora2pg</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# wget https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;ora2pg&#x2F;files&#x2F;19.1&#x2F;ora2pg-19.1.tar.bz2</span><br><span class="line">[root@pg07 ~]# tar -xjf ora2pg-19.1.tar.bz2 </span><br><span class="line">[root@pg07 ~]# cd ora2pg-19.1</span><br><span class="line">[root@pg07 ora2pg-19.1]# perl Makefile.PL </span><br><span class="line">Checking if your kit is complete...</span><br><span class="line">Looks good</span><br><span class="line">Writing Makefile for Ora2Pg</span><br><span class="line"></span><br><span class="line">Done...</span><br><span class="line">------------------------------------------------------------------------------</span><br><span class="line">Please read documentation at http:&#x2F;&#x2F;ora2pg.darold.net&#x2F; before asking for help</span><br><span class="line">------------------------------------------------------------------------------</span><br><span class="line">Now type: make &amp;&amp; make install</span><br><span class="line">[root@pg07 ora2pg-19.1]# make &amp;&amp; make install</span><br><span class="line">cp lib&#x2F;Ora2Pg.pm blib&#x2F;lib&#x2F;Ora2Pg.pm</span><br><span class="line">cp lib&#x2F;Ora2Pg&#x2F;GEOM.pm blib&#x2F;lib&#x2F;Ora2Pg&#x2F;GEOM.pm</span><br><span class="line">cp lib&#x2F;Ora2Pg&#x2F;PLSQL.pm blib&#x2F;lib&#x2F;Ora2Pg&#x2F;PLSQL.pm</span><br><span class="line">cp lib&#x2F;Ora2Pg&#x2F;MySQL.pm blib&#x2F;lib&#x2F;Ora2Pg&#x2F;MySQL.pm</span><br><span class="line">cp scripts&#x2F;ora2pg blib&#x2F;script&#x2F;ora2pg</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;perl -MExtUtils::MY -e &#39;MY-&gt;fixin(shift)&#39; -- blib&#x2F;script&#x2F;ora2pg</span><br><span class="line">cp scripts&#x2F;ora2pg_scanner blib&#x2F;script&#x2F;ora2pg_scanner</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;perl -MExtUtils::MY -e &#39;MY-&gt;fixin(shift)&#39; -- blib&#x2F;script&#x2F;ora2pg_scanner</span><br><span class="line">Manifying blib&#x2F;man3&#x2F;ora2pg.3</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;share&#x2F;perl5&#x2F;Ora2Pg.pm</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;share&#x2F;perl5&#x2F;Ora2Pg&#x2F;GEOM.pm</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;share&#x2F;perl5&#x2F;Ora2Pg&#x2F;PLSQL.pm</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;share&#x2F;perl5&#x2F;Ora2Pg&#x2F;MySQL.pm</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;share&#x2F;man&#x2F;man3&#x2F;ora2pg.3</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;bin&#x2F;ora2pg</span><br><span class="line">Installing &#x2F;usr&#x2F;local&#x2F;bin&#x2F;ora2pg_scanner</span><br><span class="line">Installing default configuration file (ora2pg.conf.dist) to &#x2F;etc&#x2F;ora2pg</span><br><span class="line">Appending installation info to &#x2F;usr&#x2F;lib64&#x2F;perl5&#x2F;perllocal.pod</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-4-安装DBD-Oracle"><a href="#1-4-安装DBD-Oracle" class="headerlink" title="1.4 安装DBD::Oracle"></a>1.4 安装DBD::Oracle</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# perl -MCPAN -e shell</span><br><span class="line">Terminal does not support AddHistory.</span><br><span class="line"></span><br><span class="line">cpan shell -- CPAN exploration and modules installation (v1.9800)</span><br><span class="line">Enter &#39;h&#39; for help.</span><br><span class="line">cpan[1]&gt; get DBD::Oracle</span><br><span class="line">Fetching with HTTP::Tiny:</span><br><span class="line">http:&#x2F;&#x2F;mirror.truenetwork.ru&#x2F;CPAN&#x2F;authors&#x2F;01mailrc.txt.gz</span><br><span class="line">Reading &#39;&#x2F;root&#x2F;.cpan&#x2F;sources&#x2F;authors&#x2F;01mailrc.txt.gz&#39;</span><br><span class="line">............................................................................DONE</span><br><span class="line">Fetching with HTTP::Tiny:</span><br><span class="line">http:&#x2F;&#x2F;mirror.truenetwork.ru&#x2F;CPAN&#x2F;modules&#x2F;02packages.details.txt.gz</span><br><span class="line">Reading &#39;&#x2F;root&#x2F;.cpan&#x2F;sources&#x2F;modules&#x2F;02packages.details.txt.gz&#39;</span><br><span class="line">  Database was generated on Wed, 28 Nov 2018 23:54:25 GMT</span><br><span class="line">  HTTP::Date not available</span><br><span class="line">.............</span><br><span class="line">  New CPAN.pm version (v2.16) available.</span><br><span class="line">  [Currently running version is v1.9800]</span><br><span class="line">  You might want to try</span><br><span class="line">    install CPAN</span><br><span class="line">    reload cpan</span><br><span class="line">  to both upgrade CPAN.pm and run the new version without leaving</span><br><span class="line">  the current session.</span><br><span class="line"></span><br><span class="line">...............................................................DONE</span><br><span class="line">Fetching with HTTP::Tiny:</span><br><span class="line">http:&#x2F;&#x2F;mirror.truenetwork.ru&#x2F;CPAN&#x2F;modules&#x2F;03modlist.data.gz</span><br><span class="line">Reading &#39;&#x2F;root&#x2F;.cpan&#x2F;sources&#x2F;modules&#x2F;03modlist.data.gz&#39;</span><br><span class="line">DONE</span><br><span class="line">Writing &#x2F;root&#x2F;.cpan&#x2F;Metadata</span><br><span class="line">Running get for module &#39;DBD::Oracle&#39;</span><br><span class="line">Fetching with HTTP::Tiny:</span><br><span class="line">http:&#x2F;&#x2F;mirror.truenetwork.ru&#x2F;CPAN&#x2F;authors&#x2F;id&#x2F;Z&#x2F;ZA&#x2F;ZARQUON&#x2F;DBD-Oracle-1.76.tar.gz</span><br><span class="line">Fetching with HTTP::Tiny:</span><br><span class="line">http:&#x2F;&#x2F;mirror.truenetwork.ru&#x2F;CPAN&#x2F;authors&#x2F;id&#x2F;Z&#x2F;ZA&#x2F;ZARQUON&#x2F;CHECKSUMS</span><br><span class="line">Checksum for &#x2F;root&#x2F;.cpan&#x2F;sources&#x2F;authors&#x2F;id&#x2F;Z&#x2F;ZA&#x2F;ZARQUON&#x2F;DBD-Oracle-1.76.tar.gz ok</span><br><span class="line">Scanning cache &#x2F;root&#x2F;.cpan&#x2F;build for sizes</span><br><span class="line">DONE</span><br><span class="line">cpan[2]&gt; quit</span><br><span class="line">Terminal does not support GetHistory.</span><br><span class="line">Lockfile removed.</span><br><span class="line">[root@pg07 ~]# cd .cpan&#x2F;build&#x2F;DBD-Oracle-1.76-sU5yu5&#x2F;</span><br><span class="line">[root@pg07 DBD-Oracle-1.76-sU5yu5]# perl Makefile.PL</span><br><span class="line">[root@pg07 DBD-Oracle-1.76-sU5yu5]# make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-5-创建ora2pg配置文件"><a href="#1-5-创建ora2pg配置文件" class="headerlink" title="1.5 创建ora2pg配置文件"></a>1.5 创建ora2pg配置文件</h5><p>首先从示例文件复制一份，然后根据实际情况更改配置文件相关参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# cp &#x2F;etc&#x2F;ora2pg&#x2F;ora2pg.conf.dist &#x2F;etc&#x2F;ora2pg&#x2F;ora2pg.conf</span><br><span class="line">[root@pg07 ~]#  vi &#x2F;etc&#x2F;ora2pg&#x2F;ora2pg.conf</span><br><span class="line">--Oracle连接参数</span><br><span class="line">ORACLE_HOME     &#x2F;usr&#x2F;lib&#x2F;oracle&#x2F;12.2&#x2F;client64</span><br><span class="line">ORACLE_DSN      dbi:Oracle:host&#x3D;172.16.100.19;sid&#x3D;kkdb;port&#x3D;1521</span><br><span class="line">ORACLE_USER     system --如果这里的用户是sys、system，则user_grants选项必须设置为1</span><br><span class="line">ORACLE_PWD      abcABC12</span><br><span class="line">USER_GRANTS     1</span><br><span class="line">ORA_INITIAL_COMMAND commit</span><br><span class="line">--schema参数</span><br><span class="line">EXPORT_SCHEMA   1</span><br><span class="line">SCHEMA  XXKIN</span><br><span class="line">CREATE_SCHEMA   0</span><br><span class="line">COMPILE_SCHEMA  0</span><br><span class="line">PG_SCHEMA   public</span><br><span class="line">--导出对象(根据实际情况选择)</span><br><span class="line">TYPE    TABLE COPY  VIEW TYPE </span><br><span class="line">DISABLE_COMMENT         0</span><br><span class="line">EXTERNAL_TO_FDW         1</span><br><span class="line">TRUNCATE_TABLE  0</span><br><span class="line">USE_TABLESPACE          0</span><br><span class="line">REORDERING_COLUMNS      0</span><br><span class="line">--约束参数</span><br><span class="line">KEEP_PKEY_NAMES         0</span><br><span class="line">PKEY_IN_CREATE          0</span><br><span class="line">FKEY_ADD_UPDATE         never</span><br><span class="line">FKEY_DEFERRABLE 0</span><br><span class="line">DEFER_FKEY      0</span><br><span class="line">DROP_FKEY       1</span><br><span class="line">--触发器参数</span><br><span class="line">DISABLE_SEQUENCE        1</span><br><span class="line">DISABLE_TRIGGERS 1</span><br><span class="line">--对象修改参数</span><br><span class="line">PRESERVE_CASE   0</span><br><span class="line">INDEXES_RENAMING        0</span><br><span class="line">USE_INDEX_OPCLASS       0</span><br><span class="line">PREFIX_PARTITION        0</span><br><span class="line">DISABLE_PARTITION       1</span><br><span class="line">WITH_OID                0</span><br><span class="line">ORA_RESERVED_WORDS      audit,comment</span><br><span class="line">USE_RESERVED_WORDS      1</span><br><span class="line">DISABLE_UNLOGGED        0</span><br><span class="line">--PostgreSQL参数</span><br><span class="line">PG_DSN          dbi:Pg:dbname&#x3D;kkdb;host&#x3D;192.168.120.149;port&#x3D;5432</span><br><span class="line">PG_USER         xxkin</span><br><span class="line">PG_PWD          redhat</span><br><span class="line">OUTPUT          xxkin.sql</span><br><span class="line">OUTPUT_DIR     &#x2F;tmp</span><br><span class="line">BZIP2</span><br><span class="line">FILE_PER_CONSTRAINT     0</span><br><span class="line">FILE_PER_INDEX          0</span><br><span class="line">FILE_PER_FKEYS          0</span><br><span class="line">FILE_PER_TABLE  0</span><br><span class="line">FILE_PER_FUNCTION       0</span><br><span class="line">STOP_ON_ERROR           1</span><br><span class="line">COPY_FREEZE             0</span><br><span class="line">CREATE_OR_REPLACE       1</span><br><span class="line">--TYPE参数</span><br><span class="line">PG_NUMERIC_TYPE 1</span><br><span class="line">PG_INTEGER_TYPE 1</span><br><span class="line">DEFAULT_NUMERIC bigint</span><br><span class="line">ENABLE_MICROSECOND      1</span><br><span class="line">TO_NUMBER_CONVERSION    numeric</span><br><span class="line">GEN_USER_PWD    0</span><br><span class="line">FORCE_OWNER     0</span><br><span class="line">FORCE_SECURITY_INVOKER  0</span><br><span class="line">--数据参数</span><br><span class="line">DATA_LIMIT      10000</span><br><span class="line">NOESCAPE        0</span><br><span class="line">TRANSACTION     serializable</span><br><span class="line">STANDARD_CONFORMING_STRINGS     1</span><br><span class="line">NO_LOB_LOCATOR  1</span><br><span class="line">XML_PRETTY      0</span><br><span class="line">LOG_ON_ERROR            0</span><br><span class="line">TRIM_TYPE               BOTH</span><br><span class="line">INTERNAL_DATE_MAX       49</span><br><span class="line">FUNCTION_CHECK          1</span><br><span class="line">--Export&#x2F;Import性能参数</span><br><span class="line">JOBS            1</span><br><span class="line">ORACLE_COPIES   1</span><br><span class="line">PARALLEL_TABLES 1</span><br><span class="line">DEFAULT_PARALLELISM_DEGREE      0</span><br><span class="line">PARALLEL_MIN_ROWS               100000</span><br><span class="line">DROP_INDEXES    0</span><br><span class="line">SYNCHRONOUS_COMMIT      0</span><br><span class="line">--PLSQL参数</span><br><span class="line">EXPORT_INVALID  0</span><br><span class="line">PLSQL_PGSQL     1</span><br><span class="line">NULL_EQUAL_EMPTY        0</span><br><span class="line">EMPTY_LOB_NULL          0</span><br><span class="line">PACKAGE_AS_SCHEMA       1</span><br><span class="line">REWRITE_OUTER_JOIN      1</span><br><span class="line">FUNCTION_STABLE         1</span><br><span class="line">COMMENT_COMMIT_ROLLBACK 0</span><br><span class="line">COMMENT_SAVEPOINT       0</span><br><span class="line">USE_ORAFCE      0</span><br><span class="line">AUTONOMOUS_TRANSACTION  1</span><br><span class="line">--ASSESSMENT参数</span><br><span class="line">ESTIMATE_COST           0</span><br><span class="line">COST_UNIT_VALUE         5</span><br><span class="line">DUMP_AS_HTML            0</span><br><span class="line">TOP_MAX                 10</span><br><span class="line">HUMAN_DAYS_LIMIT        5</span><br><span class="line">--PostgreSQL特性参数</span><br><span class="line">PG_SUPPORTS_WHEN        1</span><br><span class="line">PG_SUPPORTS_INSTEADOF   1</span><br><span class="line">PG_SUPPORTS_MVIEW       1</span><br><span class="line">PG_SUPPORTS_CHECKOPTION 1</span><br><span class="line">PG_SUPPORTS_IFEXISTS    1</span><br><span class="line">PG_SUPPORTS_LATERAL     1</span><br><span class="line">PG_SUPPORTS_PARTITION   1</span><br><span class="line">BITMAP_AS_GIN           1</span><br><span class="line">PG_BACKGROUND           0</span><br><span class="line">PG_SUPPORTS_SUBSTR      1</span><br><span class="line">PG_SUPPORTS_NAMED_OPERATOR      1</span><br><span class="line">PG_SUPPORTS_IDENTITY    1</span><br><span class="line">PG_SUPPORTS_PROCEDURE   0</span><br><span class="line">--SPATIAL参数</span><br><span class="line">AUTODETECT_SPATIAL_TYPE 1</span><br><span class="line">CONVERT_SRID            1</span><br><span class="line">DEFAULT_SRID            4326</span><br><span class="line">GEOMETRY_EXTRACT_TYPE   INTERNAL</span><br><span class="line">--FDW参数</span><br><span class="line">FDW_SERVER      orcl</span><br><span class="line">--MySQL参数</span><br><span class="line">MYSQL_PIPES_AS_CONCAT           0</span><br><span class="line">MYSQL_INTERNAL_EXTRACT_FORMAT   0</span><br></pre></td></tr></table></figure>
+
+<p>到此，整个ora2pg的安装配置已完成。</p>
+<h3 id="二、使用ora2pg"><a href="#二、使用ora2pg" class="headerlink" title="二、使用ora2pg"></a>二、使用ora2pg</h3><h5 id="2-1-导出全部表结构"><a href="#2-1-导出全部表结构" class="headerlink" title="2.1 导出全部表结构"></a>2.1 导出全部表结构</h5><p>如果在配置文件里指定的type包含了COPY，导完表结构后，表的数据也会随之导出，加-t参数即可只导出表结构不导出数据。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# ora2pg -t table view</span><br><span class="line">[&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;] 777&#x2F;777 tables (100.0%) end of scanning.                 </span><br><span class="line">[&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;] 777&#x2F;777 tables (100.0%) end of table export.                  </span><br><span class="line">[&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;] 0&#x2F;0 views (100.0%) end of output. </span><br></pre></td></tr></table></figure>
+
+<p>导出完成后，在PostgreSQL中创建数据库以及对应的表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">-bash-4.2$ psql</span><br><span class="line">psql (10.6)</span><br><span class="line">Type &quot;help&quot; for help.</span><br><span class="line"></span><br><span class="line">postgres&#x3D;# CREATE USER xxkin WITH password &#39;redhat&#39; CREATEDB SUPERUSER replication bypa***ls createrole login;</span><br><span class="line">postgres&#x3D;# create database kkdb;</span><br><span class="line">postgres&#x3D;# alter database kkdb owner to xxkin;</span><br><span class="line">postgres&#x3D;# \c kkdb</span><br><span class="line">You are now connected to database &quot;kkdb&quot; as user &quot;postgres&quot;.</span><br><span class="line">kkdb&#x3D;# \i &#x2F;tmp&#x2F;output.sql</span><br></pre></td></tr></table></figure>
+
+<p>ora2pg有很多参数可供使用，具体请参考其帮助文件。</p>
+<h5 id="2-2-通过ora2pg迁移数据"><a href="#2-2-通过ora2pg迁移数据" class="headerlink" title="2.2 通过ora2pg迁移数据"></a>2.2 通过ora2pg迁移数据</h5><p>之前已创建好数据库以及相关表结构，现在只需通过ora2pg将数据同步到PostgreSQL数据库上即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# ora2pg -d -t copy</span><br><span class="line">[2018-11-30 11:38:51] Ora2Pg version: 19.1</span><br><span class="line">[2018-11-30 11:38:51] Trying to connect to database: dbi:Oracle:host&#x3D;172.16.100.19;sid&#x3D;kkdb;port&#x3D;1521</span><br><span class="line">[2018-11-30 11:38:51] Isolation level: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE</span><br><span class="line">[2018-11-30 11:38:51] DEBUG: executing initial command to Oracle: commit</span><br><span class="line">[2018-11-30 11:38:51] Retrieving table information...</span><br><span class="line">[2018-11-30 11:40:55] [1] Scanning table ABC_DEL_CLASS (1 rows)...</span><br><span class="line">[2018-11-30 11:40:55] [2] Scanning table ACTIVITY_DATA (41 rows)...</span><br><span class="line">[2018-11-30 11:40:55] [3] Scanning table ACTIVITY_GBEAN_STAT (243897 rows)...</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>如果在迁移过程中，需要排除某些表，加-e参数，如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@pg07 ~]# ora2pg -d -t copy -e usr_dx_tbs,hr_info_pg,op_log</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://www.fenv.top/wp-content/uploads/2020/11/image-1024x207.png"></p>
+<p><strong>如图，出现此打印结果，说明数据迁移成功。</strong></p>
+<h6 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h6><p>以下是在使用过程遇到的问题，提出的建议：<br>1、先导出表结构，然后在同步数据；<br>2、在导出表结构的时候禁用分区表；<br>3、注意PostgreSQL的保留的关键字是否为oracle表字段名；<br>4、删除所有外键约束。<br>5、直接通过ora2pg迁移数据，不要将oracle表数据导出为csv格式，然后再导入PostgreSQL数据库。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -372,7 +254,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -389,55 +271,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/23/oracle%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE%EF%BC%9Aora2pg%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/23/hello-world-1/" class="archive-article-date">
-  	<time datetime="2020-11-23T01:38:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-23</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2021/01/18/linux%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Linux查看网络流量
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/23/hello-world-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">世界，您好！</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/23/hello-world-1/">世界，您好！</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/其他//" class="article-tag-list-link color3">其他</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -460,8 +400,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
